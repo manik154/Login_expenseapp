@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/background_color"
+        android:layout_below="@+id/MyAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="@string/amount"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px" />
+
+            <EditText
+                android:id="@+id/userEmailId"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/category"
+                android:layout_width="fill_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px" />
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="@string/Description"
+                android:inputType="textLongMessage"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px" />
+
+            <EditText
+                android:id="@+id/payee"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:hint="@string/Payee"
+                android:inputType="textLongMessage"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/date_time_relative_layout">
+
+                <EditText
+                    android:id="@+id/expense_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:hint="Expense Date"
+                    android:textSize="16sp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false" />
+
+                <EditText
+                    android:id="@+id/expense_time"
+                    android:layout_width="wrap_content"
+                    android:inputType="time"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:hint="@string/Expense_time"
+                    android:layout_alignParentRight="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start">
+
+            <ImageButton
+                    android:id="@+id/AddMediaCapture2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/expense_time"
+                    android:src="@drawable/capture_image_icon"
+                    android:contentDescription="@string/desc"
+                    android:text="@string/CaptureMedia"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+                </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/SaveExpense_button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+
+                android:background="@drawable/loginbutton_selector"
+                android:padding="3dp"
+                android:text="@string/saveexpense"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
